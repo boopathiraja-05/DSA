@@ -38,7 +38,7 @@ Instead of shifting elements one by one (which is inefficient), we use **array r
 
 ### 🔹 Rotate Array
 
-```java
+``` java 
 public int[] rotateArray(int[] arr, int n, int k) {
     if (n == 0) return arr;
 
@@ -56,8 +56,10 @@ public int[] rotateArray(int[] arr, int n, int k) {
     return arr;
 }
 
+```
 
-🔹 Reverse Helper Function
+## 🔹 Reverse Helper Function
+```
 void reverse(int[] arr, int start, int end) {
     while (start < end) {
         int temp = arr[start];
@@ -67,17 +69,26 @@ void reverse(int[] arr, int start, int end) {
         end--;
     }
 }
-🧪 Dry Run
+```
+
+## 🧪 Dry Run
+
 arr = [1,2,3,4,5], k = 2
 
-Step 1: [5,4,3,2,1]
-Step 2: [4,5,3,2,1]
-Step 3: [4,5,1,2,3]
-⏱️ Complexity
-Type	Value
-Time	O(N)
-Space	O(1)
-⚠️ Edge Cases
-k > n → use k % n
-n = 0 → return array
-k = 0 → no change
+- Step 1: [5,4,3,2,1]
+- Step 2: [4,5,3,2,1]
+- Step 3: [4,5,1,2,3]
+
+---
+
+## ⏱️ Complexity
+- Type	Value
+- Time	O(N)
+- Space	O(1)
+
+---
+
+## ⚠️ Edge Cases
+- k > n → use k % n
+- n = 0 → return array
+- k = 0 → no change
