@@ -27,10 +27,13 @@ public class Main {
 //      System.out.println("Reversed array:");
 //      System.out.println(Arrays.toString(obj.reverseallElements(arr, n)));
 
-      RotateArray obj2 = new RotateArray();
-      System.out.println("Rotated array:");
-      System.out.println(Arrays.toString(obj2.rotateArray(arr, n , k)));
+//      RotateArray obj2 = new RotateArray();
+//      System.out.println("Rotated array:");
+//      System.out.println(Arrays.toString(obj2.rotateArray(arr, n , k)));
 
+      Remove_Duplicates_from_sorted_array obj3 = new Remove_Duplicates_from_sorted_array();
+      System.out.println("Array with duplicates removed:");
+      System.out.println((obj3.removeDuplicates(arr)));
 
 
   }
